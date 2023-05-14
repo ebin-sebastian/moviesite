@@ -1,0 +1,27 @@
+<div class="body">
+  <div class="logo">Epic Moives</div>
+  <div class="login-container">
+    <div class="desc">
+      Epic Movies is an all-in-one movie rating site that offers a comprehensive
+      and informative platform for movie enthusiasts. With an extensive database
+      of movies across different genres and languages, Epic Movies provides
+      detailed information about each movie, including the cast, crew, synopsis,
+      and user ratings. Our user-friendly interface allows you to search and
+      browse movies quickly and easily, and our expert reviews and ratings help
+      you make informed decisions about what to watch next. Join us at Epic
+      Movies, and discover your next favorite movie today
+    </div>
+    <div class="login-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" class="form-control" [(ngModel)]="uname"/>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"  class="form-control" [(ngModel)]="psw"/>
+      <div class="error">{{errorMsg}}</div>
+      <div class="button-container">
+        
+        <button type="submit" (click)="login()">Log In</button>
+        <button type="submit">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>

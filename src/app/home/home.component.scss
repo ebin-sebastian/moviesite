@@ -1,0 +1,167 @@
+* {
+    // box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .body {
+    height: 100%;
+    background: linear-gradient(135deg, #Ff2800 0%, #FE2712 100%);
+    font-family: 'Century Gothic';
+    color:#FFDD83;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .all-movies {
+    width: 100%;
+    max-width: 900px;
+    min-height: calc(100vh - 80px);
+    border-right: 2px solid #f00d0d;
+    padding: 20px 40px;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-left: 5px solid yellow;
+    padding-left: 10px;
+  }
+  
+  .view-all {
+    cursor: pointer;
+    color: yellow;
+    padding: 5px;
+    background-color: #f00d0d;
+    border-radius: 10px;
+  }
+  
+  .movie-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .movie {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+    padding: 0 5px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .movie .cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+  
+  .name{
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+   
+  }
+  
+  .rating {
+    text-align: center;
+  }
+  
+  .popular-movies {
+    width: 100%;
+    max-width: 300px;
+    min-height: calc(100vh - 80px);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+
+    .movie .detail .name{
+        font-size:18px;
+        font-weight:bold
+        }
+        .movie .detail{
+            flex-grow:1;
+            text-align:left;
+            padding-left:10px
+            }
+            .p-movie{
+
+                margin-bottom:10px
+                }
+                h3{
+                    padding-bottom: 30px;
+                    font-weight: bold;
+                }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 767px) {
+    .all-movies {
+      padding: 20px;
+    }
+    
+    .movie {
+      width: calc(100% / 3);
+      max-width: calc(100% / 3);
+    }
+    
+    .popular-movies {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .all-movies {
+      max-width: 600px;
+    }
+    
+    .movie {
+      width: calc(100% / 4);
+      max-width: calc(100% / 4);
+    }
+    
+    .popular-movies {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .all-movies {
+      max-width: 800px;
+    }
+    
+    .movie {
+      width: calc(100% / 5);
+      max-width: calc(100% / 5);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .all-movies {
+      max-width: 900px;
+    }
+    
+    .movie {
+      width: calc(100% / 6);
+      max-width: calc(100% / 6);
+    }
+  }
+  
